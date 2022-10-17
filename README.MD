@@ -28,3 +28,5 @@ Have fun!
 ## Progress
 
 17.10.22 Project started - gitHub repo and project structure setup.
+
+17.10.22 Stage 1 completed - array-handling, read into array, POSIX-regexp, bats-testing
