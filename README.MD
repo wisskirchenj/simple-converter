@@ -15,7 +15,9 @@ The sources of main project tasks (5 stages) and testing.
 
 The toy project implements a unit converter with bash including menu and persistence functionality.
 
-Stage 1: command syntax parsing.
+Stage 1: command syntax parsing
+
+Stage 2: check and convert a value
 
 Run tests using bats
 
@@ -30,3 +32,5 @@ Have fun!
 17.10.22 Project started - gitHub repo and project structure setup.
 
 17.10.22 Stage 1 completed - array-handling, read into array, POSIX-regexp, bats-testing
+
+18.10.22 Stage 2 completed - functionize, while-loop and use of basic calculator 'bc'

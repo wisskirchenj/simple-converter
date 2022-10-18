@@ -11,44 +11,28 @@ function do_convert() {
 # ---------- happy case testing -------
 
 @test "feet_to_meter 0.304" {
-    run do_convert "feet_to_meter 0.304"
-    assert_output --partial "The definition is correct!"
+    run do_convert "feet_to_meter 0.304\n100"
+    assert_output --partial "Enter a value to convert:"
+    assert_output --partial "Result: 30.4"
 }
 
-@test "miles_to_km 1.6" {
-    run do_convert "miles_to_km 1.6"
-    assert_output --partial "The definition is correct!"
+@test "miles_to_km 1.6\n20" {
+    run do_convert "miles_to_km 1.6\n20"
+    assert_output --partial "Enter a definition:"
+    assert_output --partial "Result: 32"
 }
 
 
-@test "miles_to_km -1.6" {
-    run do_convert "miles_to_km -1.6"
-    assert_output --partial "The definition is correct!"
+@test "miles_to_km 1.6\na\n1" {
+    run do_convert "miles_to_km 1.6\na\n1"
+    assert_output --partial "Result: 1.6"
+    assert_output --partial "Enter a float or integer value!"
+    assert_output --partial "Enter a value to convert:"
 }
 
-@test "miles_to_km 1" {
-    run do_convert "miles_to_km 1"
-    assert_output --partial "The definition is correct!"
-}
-
-@test "miles_to_km 0.0" {
-    run do_convert "miles_to_km 0.0"
-    assert_output --partial "The definition is correct!"
-}
-
-@test "miles_to_km -1" {
-    run do_convert "miles_to_km -1"
-    assert_output --partial "The definition is correct!"
-}
-
-@test "miles_to_km 112345" {
-    run do_convert "miles_to_km 112345"
-    assert_output --partial "The definition is correct!"
-}
-
-@test "miles_to_km -2." {
-    run do_convert "miles_to_km -2."
-    assert_output --partial "The definition is correct!"
+@test "a_to_b 0\n-12" {
+    run do_convert "a_to_b 0\n-12"
+    assert_output --partial "Result: 0"
 }
 
 # ---------- error case testing -------
