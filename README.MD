@@ -19,6 +19,10 @@ Stage 1: command syntax parsing
 
 Stage 2: check and convert a value
 
+Stage 3: menu loop to the application
+
+Stage 4: complex menu workflow with many checks and loops to add and delete convert definitions to a definitions-file.
+
 Run tests using bats
 
 Have fun!
@@ -36,3 +40,6 @@ Have fun!
 18.10.22 Stage 2 completed - functionize, while-loop and use of basic calculator 'bc'
 
 22.10.22 Stage 3 completed - menu loop functionality with choice evaluation
+
+22.10.22 Stage 4 completed - complex workflow to add and delete convert definitions. 
+used: sed, wc, case, BASH_REMATCH, ... a lot
