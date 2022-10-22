@@ -34,3 +34,5 @@ Have fun!
 17.10.22 Stage 1 completed - array-handling, read into array, POSIX-regexp, bats-testing
 
 18.10.22 Stage 2 completed - functionize, while-loop and use of basic calculator 'bc'
+
+22.10.22 Stage 3 completed - menu loop functionality with choice evaluation
