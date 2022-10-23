@@ -23,13 +23,15 @@ Stage 3: menu loop to the application
 
 Stage 4: complex menu workflow with many checks and loops to add and delete convert definitions to a definitions-file.
 
+Stage 5: implement the last menu item to do the actual conversions.
+
 Run tests using bats
 
 Have fun!
 
 ## Project completion
 
-[//]: # (Project was completed on 20.09.22.)
+Project was completed on 23.10.22.
 
 ## Progress
 
@@ -43,3 +45,5 @@ Have fun!
 
 22.10.22 Stage 4 completed - complex workflow to add and delete convert definitions. 
 used: sed, wc, case, BASH_REMATCH, ... a lot
+
+23.10.22 Final stage 5 completed - reuse of stage 2 code and delete_def menu item. sed-implementation.
