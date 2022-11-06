@@ -4,8 +4,9 @@ Implemented in the Track 'Introduction to Command Line and Unix Shell' of hypers
 
 ## Technology / External Libraries
 
-- bash 3.2.57 on macOS
+- bash 5.2.2 on macOS
 - bash testing suite BATS (bats-core, bats-assert, bats-support)
+- gnu-sed (brew installed ...)
 
 ## Repository Contents
 

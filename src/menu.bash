@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# converter stage 4
+# converter stage 5
 
 FILE_NAME="definitions.txt"
 REGEX_NUMBER='^-?[0-9]+\.?[0-9]*$'
@@ -50,7 +50,7 @@ function list_file_with_line_numbers() {
 
 function delete_line_from_file() {
   if [ $1 -gt 0 ]; then
-    sed -i '' $1'd' $FILE_NAME
+    sed -i $1'd' $FILE_NAME
   fi
 }
 
